@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  subject: MyString
+  start_time: 2019-03-25 06:49:05
+  finish_time: 2019-03-25 06:49:05
+  memo: MyText
+
+two:
+  subject: MyString
+  start_time: 2019-03-25 06:49:05
+  finish_time: 2019-03-25 06:49:05
+  memo: MyText
