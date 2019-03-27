@@ -39,7 +39,15 @@ gem 'kaminari'
 #ページネーション追加
 gem 'ransack'
 #検索機能追加
-
+gem 'slim-rails'
+#slimのジェネレータ
+gem 'html2slim'
+#erb->alimの変換
+gem 'bootstrap4-datetime-picker-rails'
+#時間管理
+gem 'momentjs-rails'
+#時間管理2
+gem "font-awesome-rails"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

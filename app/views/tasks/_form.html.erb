@@ -10,28 +10,30 @@
       </ul>
     </div>
   <% end %>
-
+  <%=%>
+  <div class="form-group">
   <div class="field">
     <%= form.label :subject %>
-    <%= form.text_field :subject %>
+    <%= form.text_field :subject, class: "form-control"%>
   </div>
 
   <div class="field">
-    <%= form.label :start_time %>
-    <%= form.time_select :start_time %>
+    <%= form.label :start_time %></br>
+    <%= form.datetime_local_field :start_time, value: DateTime.current.strftime('%Y-%m-%dT%H:%M') %>
   </div>
 
   <div class="field">
-    <%= form.label :finish_time %>
-    <%= form.time_select :finish_time %>
+    <%= form.label :finish_time %></br>
+    <%= form.datetime_local_field :finish_time, value: DateTime.current.strftime('%Y-%m-%dT%H:%M') %>
   </div>
 
   <div class="field">
     <%= form.label :memo %>
-    <%= form.text_area :memo %>
+    <%= form.text_area :memo, class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "登録", class: "form-control btn btn-primary", disable_with: "送信中..." %>
+  </div>
   </div>
 <% end %>

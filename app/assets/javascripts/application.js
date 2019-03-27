@@ -17,3 +17,6 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+//= require tempusdominus-bootstrap-4.js
+//= require moment
+//= require moment/ja.js
