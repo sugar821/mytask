@@ -19,7 +19,9 @@
 
   <div class="field">
     <%= form.label :start_time %></br>
-    <%= form.datetime_local_field :start_time, value: DateTime.current.strftime('%Y-%m-%dT%H:%M') %>
+    <!--<%= form.datetime_local_field :start_time, value: DateTime.current.strftime('%Y-%m-%dT%H:%M') %>-->
+    <%= form.datetime_field :start_time, class: "datetimepicker" %>
+  
   </div>
 
   <div class="field">
